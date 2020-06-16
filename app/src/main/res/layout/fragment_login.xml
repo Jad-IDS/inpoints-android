@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bglogin"
+
+        android:orientation="vertical"
+>
+
+       <include layout="@layout/loading"/>
+     <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:layout_gravity="center"
+
+            android:gravity="center"
+            android:paddingRight="30dp"
+    >
+        <ImageView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:layout_gravity="center"
+
+                android:layout_marginBottom="70dp"
+        />
+
+
+
+        <CheckBox
+                android:visibility="visible"
+                android:buttonTint="@color/bg_iclogin"
+                android:id="@+id/cbAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"/>
+
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_corner_login"
+                android:orientation="horizontal"
+        >
+            <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/circle_login"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+
+            >
+
+                <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_user"
+
+                />
+
+
+
+            </LinearLayout>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/big_margin"
+                    android:paddingLeft="@dimen/big_margin"
+                    android:textColor="@color/white"
+                    android:hint="@string/email"
+                    android:textSize="@dimen/font"
+                    android:textDirection="locale"
+                    android:background="@color/transparent"
+                    android:id="@+id/etUsrname"
+                    android:layout_gravity="start"
+                    android:gravity="center_vertical"
+                    android:textColorHint="@color/gray_medium_3"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/big_margin"
+                android:background="@drawable/rounded_corner_login"
+                android:orientation="horizontal"
+        >
+            <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/circle_login"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+
+            >
+
+                <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_password"
+
+                />
+
+
+
+            </LinearLayout>
+
+            <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/big_margin"
+                    android:paddingLeft="@dimen/big_margin"
+                    android:textColor="@color/white"
+                    android:hint="@string/password"
+                    android:textDirection="locale"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/font"
+                    android:inputType="textPassword"
+                    android:id="@+id/etPassword"
+                    android:background="@color/transparent"
+                    android:layout_gravity="start"
+                    android:gravity="center_vertical"
+                    android:textColorHint="@color/gray_medium_3"
+            />
+
+            <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/btShowPassword"
+                    android:layout_gravity="center"
+                    android:src="@drawable/visibility_on"
+                    android:tint="@color/white"
+            />
+
+        </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_marginLeft="@dimen/second_margin"
+                android:gravity="start"
+                android:id="@+id/llRememberMe"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            <CheckBox
+                    android:buttonTint="@color/bg_iclogin"
+                    android:id="@+id/cbRemember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="@string/remember_me"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:gravity="end|center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        <com.ids.inpoint.custom.CustomTextViewMedium
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/font"
+                android:id="@+id/tvForgetPassword"
+                android:text="@string/forgot_your_password"
+                android:textColor="@color/white"
+                android:layout_gravity="end"
+                android:gravity="end|center_vertical"
+                android:layout_marginEnd="15dp"
+        />
+    </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="35dp"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:id="@+id/tvSignUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/signup"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font" />
+
+
+            <LinearLayout
+                    android:id="@+id/btSignUp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/normal_margin"
+                    android:layout_marginLeft="@dimen/normal_margin"
+                    android:background="@drawable/circle_white"
+                    android:gravity="center">
+
+                <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_signup" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:id="@+id/btLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/rounde_corner_login_light"
+
+                    >
+
+                <com.ids.inpoint.custom.CustomTextViewMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/big_margin"
+                        android:paddingRight="@dimen/big_margin"
+                        android:text="@string/login"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font" />
+
+
+                <LinearLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle_white"
+                        android:gravity="center">
+
+                    <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_arrow_right" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+
+
+
+</LinearLayout>

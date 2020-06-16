@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@drawable/rectangular_gray"
+        android:layout_marginTop="@dimen/normal_margin"
+        >
+
+
+
+
+    <LinearLayout android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="@dimen/normal_margin"
+            android:paddingLeft="@dimen/normal_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+
+        <com.ids.inpoint.custom.CustomTextViewMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:id="@+id/tvFolderName"
+                android:paddingLeft="@dimen/mini_margin"
+                android:paddingRight="@dimen/mini_margin"
+
+                android:textSize="@dimen/font_too_small"
+                />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_medium_2"/>
+
+
+
+
+    <LinearLayout android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+        <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="@dimen/mini_margin"
+                android:src="@drawable/ic_download"
+                android:id="@+id/btDownload"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/mini_margin"
+                />
+
+        <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/btEdit"
+                android:src="@drawable/ic_pen"
+                android:layout_marginRight="@dimen/mini_margin"
+                android:layout_marginLeft="@dimen/mini_margin"
+                />
+
+        <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/btDelete"
+                android:src="@drawable/ic_trash"
+                android:layout_marginRight="@dimen/mini_margin"
+                android:layout_marginLeft="@dimen/mini_margin"
+                />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+       android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearCornerShared"
+
+            >
+
+        <View
+                android:layout_width="12dp"
+                android:layout_height="2dp"
+                android:id="@+id/corner1Shared"
+                android:layout_gravity="end"
+                android:background="@color/blue"/>
+
+        <View
+                android:layout_width="2dp"
+                android:layout_height="11dp"
+                android:layout_gravity="end"
+                android:id="@+id/corner2Shared"
+                android:background="@color/blue"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            android:id="@+id/linearDotsShared"
+            android:gravity="end"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"
+            >
+
+        <View
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:id="@+id/dot1Shared"
+                android:background="@drawable/circle_blue"/>
+
+        <View
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:id="@+id/dot2Shared"
+                android:background="@drawable/circle_blue"/>
+
+        <View
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="2dp"
+                android:id="@+id/dot3Shared"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/circle_blue"/>
+    </LinearLayout>
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:src="@drawable/avatar"
+            android:id="@+id/ivUserShared"
+
+            />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/normal_margin"
+            android:layout_marginStart="@dimen/normal_margin"
+
+            >
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+
+                >
+
+            <com.ids.inpoint.custom.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ctvNameShared"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/font"
+
+
+                    />
+
+            <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/level"
+                    android:layout_marginLeft="@dimen/normal_margin"
+                    android:layout_marginStart="@dimen/normal_margin"
+                    android:tint="@color/secondary"
+
+                    />
+
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_1"
+                    android:layout_marginLeft="@dimen/small_margin"
+                    android:layout_marginStart="@dimen/small_margin"
+
+                    android:textSize="@dimen/font_small"
+                    android:textColor="@color/secondary"
+
+                    />
+
+            <com.ids.inpoint.custom.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="2dp"
+                    android:id="@+id/ctvLevelShared"
+                    android:layout_marginStart="2dp"
+                    android:textSize="@dimen/font_small"
+                    android:textColor="@color/secondary"
+                    />
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <com.ids.inpoint.custom.CustomTextViewMedium
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="at Lebanese University"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:maxWidth="150dp"
+                    android:id="@+id/ctvUniShared"
+                    android:textSize="@dimen/font_small"
+
+                    />
+
+        </LinearLayout>
+
+        <com.ids.inpoint.custom.CustomTextViewMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ctvTimePostShared"
+                android:textSize="@dimen/font_small"
+
+                />
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+</LinearLayout>

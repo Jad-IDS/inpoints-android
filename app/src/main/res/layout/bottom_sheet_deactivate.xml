@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+
+    <LinearLayout
+            android:paddingLeft="@dimen/second_margin"
+            android:paddingTop="@dimen/second_margin"
+            android:background="@drawable/rounded_corner_white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+       <LinearLayout
+               android:layout_marginBottom="@dimen/second_margin"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+           <CheckBox
+                   android:buttonTint="@color/bg_iclogin"
+                   android:id="@+id/cbDeactivateFully"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/primary"
+                   android:text="@string/deactivatefull"/>
+
+       </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <CheckBox
+                    android:buttonTint="@color/bg_iclogin"
+                    android:id="@+id/cbDeactivateTemporary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary"
+                    android:text="@string/deactivatetemp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:paddingTop="@dimen/big_margin"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                        android:id="@+id/btDeactivate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rectangular_secondary"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="@dimen/big_margin"
+                        android:paddingEnd="@dimen/big_margin">
+
+                    <com.ids.inpoint.custom.CustomTextViewMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btDeactivateAssured"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/big_margin"
+                            android:paddingRight="@dimen/big_margin"
+                            android:text="@string/deactivate_word"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font"  />
+
+                </LinearLayout>
+
+
+            <LinearLayout
+                    android:id="@+id/btCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="@dimen/big_margin">
+
+                <com.ids.inpoint.custom.CustomTextViewMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/big_margin"
+                        android:paddingRight="@dimen/big_margin"
+                        android:id="@+id/btCancelBottom"
+                        android:text="@string/cancel"
+                        android:textColor="@color/secondary"
+                        android:textSize="@dimen/font" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
